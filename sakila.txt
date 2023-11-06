@@ -1,0 +1,9 @@
+sudo apt update
+sudo apt install mysql-server
+Descomprimir la base de datos "sakila" y subimos
+mysql -u root -p
+CREATE DATABASE sakila;
+USE sakila;
+SOURCE /ruta/a/la/carpeta/sakila-schema.sql;
+SOURCE /ruta/a/la/carpeta/sakila-data.sql;
+SELECT * FROM customer LIMIT 100;
